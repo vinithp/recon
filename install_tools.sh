@@ -7,7 +7,7 @@ setup(){
     mkdir -p ~/.config/amass/jk
     mkdir -p ~/.local/bin
     mkdir -p ~/tools/my/
-    cp -r ~/recon ~/tools/my/
+    cp -r ~/recon ~/tools/my
 
     set -e
     echo -e 'tmuxr(){\ntmux attach-session -t $1\n}' >> ~/.bashrc
