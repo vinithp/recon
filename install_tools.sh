@@ -2,10 +2,12 @@
 set -e
 
 setup(){
-    cp -r ~/backup/tools ~/tools
     cd
     set +e
-    mkdir ~/.config;mkdir ~/.config/amass;mkdir ~/.config/amass/jk;mkdir ~/.local;mkdir ~/.local/bin
+    mkdir -p ~/.config/amass/jk
+    mkdir -p ~/.local/bin
+    mkdir -p ~/tools/my/
+    cp -r ~/recon ~/tools/my/
 
     set -e
     echo -e 'tmuxr(){\ntmux attach-session -t $1\n}' >> ~/.bashrc
